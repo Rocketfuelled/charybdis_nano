@@ -1,0 +1,8 @@
+#include "charybdis.dtsi"
+#include "charybdis_pmw3610.dtsi"
+
+/ {
+	vtrackball: virtual_input_trackball {
+		compatible = "zmk,virtual-input";
+	};
+};

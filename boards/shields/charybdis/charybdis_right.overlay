@@ -1,0 +1,27 @@
+#include "charybdis.dtsi"
+#include "charybdis_pmw3610.dtsi"
+
+// The matrix transform is 5 columns over because the left half is 5 columns wide.
+&default_transform {
+	col-offset = <5>;
+};
+
+&spi0 {
+    status = "okay";
+};
+
+&trackball {
+    status = "okay";
+};
+
+/ {
+	vtrackball: virtual_input_trackball {
+		compatible = "zmk,virtual-input";
+	};
+
+	input_relay_config_trackball {
+		compatible = "zmk,split-peripheral-input-relay";
+		device = <&trackball>;
+		relay-channel = <111>;
+	};
+};
