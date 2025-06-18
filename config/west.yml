@@ -5,18 +5,16 @@ manifest:
     - name: badjeff
       url-base: https://github.com/badjeff
   projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
-    - name: zmk-pmw3610-driver
-      remote: badjeff
-      revision: main
-    - name: zmk-split-peripheral-input-relay
-      remote: badjeff
-      revision: main
-    - name: zmk-input-behavior-listener
-      remote: badjeff
-      revision: main
+  - name: zmk
+    remote: zmkfirmware
+    revision: main
+    import: app/west.yml
+  - name: zmk-pmw3610-driver
+    remote: badjeff
+    revision: main
+  - name: zmk-keyboards-charybdis
+    url: https://github.com/Rocketfuelled/charybdis-zmk-module
+    revision: main
+    path: modules/zmk-keyboards-charybdis
   self:
     path: config
