@@ -6,7 +6,12 @@
 / {
     trackball_listener {
         compatible = "zmk,input-listener";
-        device = <&trackball_split>;
+        device = <&trackball_r_split>;
+    };
+
+    trackball_l_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball_l_split>;
     };
 
     behaviors {
@@ -191,7 +196,7 @@
   &kp Q       &kp W           &kp E        &kp R        &kp T        &kp Y        &kp U            &kp I         &kp O       &kp P
   &hl LGUI A  &hl LEFT_ALT S  &hl LCTRL D  &hl LSHFT F  &kp G        &kp H        &hr RSHFT J      &hr RCTRL K   &hr RALT L  &hr RGUI SQT
   &lt 6 Z     &kp X           &kp C        &kp V        &kp B        &kp N        &kp M            &kp COMMA     &kp DOT     &lt 6 SLASH
-                              &lt 4 ESC    &lt 4 SPACE  &lt 5 TAB    &lt 2 ENTER  &lt 1 BACKSPACE  &lt 3 DELETE
+                              &lt 6 ESC    &lt 4 SPACE  &lt 5 TAB    &lt 2 ENTER  &lt 1 BACKSPACE  &lt 3 DELETE
             >;
         };
 
