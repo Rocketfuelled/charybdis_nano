@@ -4,6 +4,8 @@
 #include <dt-bindings/zmk/mouse.h>
 #include "zmk-helpers/helper.h"
 
+#define QUICK_TAP_MS 175
+
 // Tap: repeat after alpha, else sticky-shift |
 // Shift + tap/ double-tap: caps-word | Hold: shift.
 #define MAGIC_SHIFT &magic_shift LSHFT 0
